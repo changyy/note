@@ -912,7 +912,7 @@ document.newsite_link['走&#65292;去海邊&#65281;'] = 'http://blog.changyy.org
 document.newsite_link['PostgreSQL 筆記'] = 'http://blog.changyy.org/2011/09/postgresql.html';
 document.newsite_link['使用 Galileo 與 Mobile Atlas Creator 之離線地圖測試心得'] = 'http://blog.changyy.org/2011/03/galileo-mobile-atlas-creator.html';
 
-function newSiteURL(title) {
+document.newSiteURL = function (title) {
 	if( document.newsite_link[curr_title] != undefined )
 		return document.newsite_link[curr_title];
 	return '';
