@@ -920,7 +920,7 @@ function newSiteURL(title) {
 
 if( document.title != "第二十四個夏天後 :: 痞客邦 PIXNET ::" ) {
 
-	article_title = document.title.replace("@ 第二十四個夏天後 :: 痞客邦 PIXNET ::", "");
+	article_title = document.title.replace(" @ 第二十四個夏天後 :: 痞客邦 PIXNET ::", "");
 
 	console.log("Title:["+article_title+"]");
 	console.log(newSiteURL(article_title));
