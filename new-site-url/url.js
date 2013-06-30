@@ -1,4 +1,4 @@
-var document.document.newsite_link = {};
+var document.newsite_link = {};
 document.newsite_link['上課的態度'] = 'http://blog.changyy.org/2007/03/blog-post_3811.html';
 document.newsite_link['Mac Mini 散熱架&#65306;鍋墊 + 防滑貼'] = 'http://blog.changyy.org/2010/04/mac-mini_28.html';
 document.newsite_link['心境'] = 'http://blog.changyy.org/2006/04/blog-post_10.html';
@@ -912,9 +912,16 @@ document.newsite_link['走&#65292;去海邊&#65281;'] = 'http://blog.changyy.org
 document.newsite_link['PostgreSQL 筆記'] = 'http://blog.changyy.org/2011/09/postgresql.html';
 document.newsite_link['使用 Galileo 與 Mobile Atlas Creator 之離線地圖測試心得'] = 'http://blog.changyy.org/2011/03/galileo-mobile-atlas-creator.html';
 
-document.newSiteURL = function (title) {
+function newSiteURL(title) {
 	if( document.newsite_link[curr_title] != undefined )
 		return document.newsite_link[curr_title];
 	return '';
 }
 
+if( document.title != "第二十四個夏天後 :: 痞客邦 PIXNET ::" ) {
+
+	article_title = document.title.replace("@ 第二十四個夏天後 :: 痞客邦 PIXNET ::", "");
+
+	alert(newSiteURL(article_title));
+        document.getElementById("new_site_search").innerHTML= '新版網站搜尋：'+article_title+'' ;
+}
