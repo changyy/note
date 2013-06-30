@@ -926,5 +926,5 @@ if( document.title != "第二十四個夏天後 :: 痞客邦 PIXNET ::" ) {
 	//console.log(newSiteURL(article_title));
 	newSiteURLLocation = newSiteURL(article_title);
 	if( newSiteURLLocation != '' )
-        	document.getElementById("new_site_search").innerHTML= '新版網站搜尋：<a href="'+newSiteURLLocation+'">'+article_title+'</a>' ;
+        	document.getElementById("new_site_search").innerHTML= '新版網站h此篇文章網址：<a href="'+newSiteURLLocation+'">'+article_title+'</a>' ;
 }
