@@ -913,8 +913,8 @@ newsite_link['PostgreSQL 筆記'] = 'http://blog.changyy.org/2011/09/postgresql.
 newsite_link['使用 Galileo 與 Mobile Atlas Creator 之離線地圖測試心得'] = 'http://blog.changyy.org/2011/03/galileo-mobile-atlas-creator.html';
 
 function newSiteURL(title) {
-	if( newsite_link[curr_title] != undefined )
-		return newsite_link[curr_title];
+	if( newsite_link[title] != undefined )
+		return newsite_link[title];
 	return '';
 }
 
