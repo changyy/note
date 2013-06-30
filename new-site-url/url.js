@@ -922,7 +922,9 @@ if( document.title != "第二十四個夏天後 :: 痞客邦 PIXNET ::" ) {
 
 	article_title = document.title.replace(" @ 第二十四個夏天後 :: 痞客邦 PIXNET ::", "");
 
-	console.log("Title:["+article_title+"]");
-	console.log(newSiteURL(article_title));
-        document.getElementById("new_site_search").innerHTML= '新版網站搜尋：'+article_title+'' ;
+	//console.log("Title:["+article_title+"]");
+	//console.log(newSiteURL(article_title));
+	newSiteURLLocation = newSiteURL(article_title);
+	if( newSiteURLLocation != '' )
+        	document.getElementById("new_site_search").innerHTML= '新版網站搜尋：<a href="'+newSiteURLLocation+'">'+article_title+'</a>' ;
 }
