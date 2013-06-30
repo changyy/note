@@ -917,7 +917,4 @@ function newSiteURL(title, hash_check) {
 		return hash_check[curr_title];
 	return '';
 }
-if( (currNewSiteURL = newSiteURL( document.title, newsite_link ) ) != '' ) {
-	alert( currNewSiteURL );
-} 
 
